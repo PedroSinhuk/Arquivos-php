@@ -22,6 +22,7 @@ INSERT INTO categorias (nome) VALUES
 
 INSERT INTO produtos (nome, descricao, preco, categoria_id) VALUES
 ('Moto G Power', 'Smartphone Motorola com bateria de longa duração', 199.99, 1),
-('Redmi Note 10', 'Smartphone Xiaomi com excelente câmera', 179.99, 2),
+('Redmi Note 10', 'Smartphone Xiaomi com excelente câmera', 759,99, 2),
 ('Galaxy S21', 'Smartphone Samsung topo de linha', 799.99, 3),
+
 ('iPhone 13', 'Smartphone Apple com desempenho avançado', 999.99, 4);
