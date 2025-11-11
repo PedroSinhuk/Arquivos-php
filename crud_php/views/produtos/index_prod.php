@@ -1,12 +1,15 @@
 <?php
-include_once _DIR_ . '/../../controllers/ProdutoController.php';
+// Inclui o controller corretamente usando __DIR__
+include_once __DIR__ . '/../../controllers/ProdutoController.php';
 
+// Instancia o controller e obtém os dados
 $controller = new ProdutoController();
 $data = $controller->index();
 $stmt = $data['stmt'];
 $num = $data['num'];
 
-include _DIR_ . '/../../views/includes/header.php';
+// Inclui o header
+include __DIR__ . '/../../views/includes/header.php';
 ?>
 
 <h2>OFERTAS RELÂMPAGO!</h2>
@@ -50,6 +53,7 @@ if ($num > 0) {
 
     echo "</table>";
 
+    // Calcula o valor total
     $valorTotal = 0;
     foreach ($produtos as $produto) {
         $valorTotal += $produto['preco'];
@@ -64,4 +68,4 @@ if ($num > 0) {
 }
 ?>
 
-<?php include _DIR_ . '/../../views/includes/footer.php'; ?>
+<?php include __DIR__ . '/../../views/includes/footer.php'; ?>
