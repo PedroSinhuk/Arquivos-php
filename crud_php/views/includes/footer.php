@@ -1,7 +1,9 @@
-        <hr>
-        <footer>
-            <p>&copy; <?php echo date("Y"); ?> CRUD PHP. Todos os direitos reservados.</p>
-        </footer>
+<hr>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; <?php echo date("Y"); ?> <span class="yellow">CRUD PHP</span>. Todos os direitos reservados.</p>
     </div>
+</footer>
+</div>
 </body>
 </html>
